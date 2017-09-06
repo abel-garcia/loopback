@@ -1,0 +1,43 @@
+{
+  "name": "users",
+  "plural": "users",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "object",
+      "required": true
+    },
+    "login": {
+      "type": "object",
+      "required": true
+    },
+    "picture": {
+      "type": "object",
+      "required": true
+    },
+    "person": {
+      "type": "object",
+      "required": true
+    },
+    "location": {
+      "type": "object",
+      "required": true
+    },
+    "updateat": {
+      "type": "date",
+      "required": true
+    },
+    "createat": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
