@@ -1,0 +1,34 @@
+{
+  "name": "Chat",
+  "plural": "Chats",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_user": {
+      "type": "number",
+      "required": true
+    },
+    "mensaje": {
+      "type": "string",
+      "required": true
+    },
+    "dirigido_a": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}
